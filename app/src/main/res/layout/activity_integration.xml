@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transportationLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transportation Options"
+        android:gravity="center"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/transportSpinner"
+        android:layout_width="382dp"
+
+        android:layout_height="51dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="9dp"
+        android:hint="Select Route"
+        android:textSize="20dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <Button
+        android:id="@+id/syncDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sync Data"
+        android:layout_marginTop="16dp"
+        android:onClick="syncData" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="315dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/trackButton"
+        android:layout_marginTop="14dp"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

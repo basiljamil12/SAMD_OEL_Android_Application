@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/offerRideLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Offer Ride"
+        android:gravity="center"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/vehicleSpinner"
+        android:layout_width="379dp"
+
+        android:layout_height="49dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="9dp"
+        android:entries="@array/route_options"
+        android:hint="Select Route"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="380dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/vehicleSpinner"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Price or Fare" />
+
+    <EditText
+        android:id="@+id/detailsEditText"
+        android:layout_width="383dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/priceEditText"
+        android:layout_marginTop="9dp"
+        android:hint="Additional Details" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsEditText"
+        android:layout_marginTop="17dp"
+        android:onClick="onShareButtonClick"
+        android:text="Share" />
+
+</RelativeLayout>

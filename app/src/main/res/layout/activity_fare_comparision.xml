@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fareComparisonLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fare Comparison"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/vehicleTypeSpinner"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="22dp"
+        android:entries="@array/vehicle_options" />
+
+    <Button
+        android:id="@+id/compareButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vehicleTypeSpinner"
+        android:layout_marginTop="13dp"
+        android:onClick="onCompareButtonClick"
+        android:text="Compare Fares" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/compareButton"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

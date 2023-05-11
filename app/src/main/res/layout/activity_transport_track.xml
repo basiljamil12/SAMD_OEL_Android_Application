@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trackRoutesLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="395dp"
+        android:layout_height="50dp"
+        android:text="Track Routes"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <Spinner
+        android:id="@+id/transportSpinner"
+        android:layout_width="386dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="21dp"
+        android:entries="@array/transport_options"
+        android:hint="Select Transportation" />
+
+    <EditText
+        android:id="@+id/routeTextView"
+        android:layout_width="378dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/transportSpinner"
+        android:layout_marginTop="6dp"
+        android:text="Route: "
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/trackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/routeTextView"
+        android:layout_marginTop="19dp"
+        android:onClick="onTrackButtonClick"
+        android:text="Track" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="380dp"
+        android:layout_height="59dp"
+        android:layout_below="@id/trackButton"
+        android:layout_marginTop="27dp"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

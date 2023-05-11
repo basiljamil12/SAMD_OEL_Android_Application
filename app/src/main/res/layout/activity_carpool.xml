@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tripPlanningLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carpooling / Trip Planning"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        />
+
+    <Spinner
+        android:id="@+id/vehicleSpinner"
+        android:layout_width="379dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="9dp"
+        android:entries="@array/vehicle_options"
+        android:hint="Select Vehicle"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/sourceEditText"
+        android:layout_width="383dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/vehicleSpinner"
+        android:hint="Source" />
+
+    <EditText
+        android:id="@+id/destinationEditText"
+        android:layout_width="385dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/sourceEditText"
+        android:hint="Destination" />
+
+    <Button
+        android:id="@+id/planTripButton"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/destinationEditText"
+        android:layout_marginTop="11dp"
+        android:text="Plan Trip"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:id="@+id/travelTimeTextView"
+        android:layout_width="386dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/planTripButton"
+        android:layout_marginTop="30dp"
+        android:text="Estimated Travel Time: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/fareTextView"
+        android:layout_width="380dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/travelTimeTextView"
+        android:layout_marginTop="17dp"
+        android:text="Fare Price: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/transportOptionsTextView"
+        android:layout_width="388dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/fareTextView"
+        android:layout_marginTop="17dp"
+        android:text="Transportation Options: "
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/saveRouteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transportOptionsTextView"
+        android:layout_marginTop="22dp"
+        android:text="Save Route"
+        android:textSize="17dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/signupTextView"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="MENU"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/carPoolButton"
+        android:layout_width="394dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupTextView"
+        android:layout_marginTop="28dp"
+        android:text="Carpooling / Trip Planning"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/earnWhileTravelButton"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupTextView"
+        android:layout_marginTop="86dp"
+        android:text="Earn while travel"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/transportButton"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupTextView"
+        android:layout_marginTop="148dp"
+        android:text="Transportation tracking"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/costSavingButton"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupTextView"
+        android:layout_marginTop="207dp"
+        android:text="Cost Saving feature"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/IntegrationButton"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupTextView"
+        android:layout_marginTop="262dp"
+        android:text="Integration with third-party systems"
+        android:textSize="17dp" />
+</RelativeLayout>
